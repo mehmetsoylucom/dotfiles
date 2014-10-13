@@ -23,4 +23,4 @@ scrooloose/nerdtree
 mattn/emmet-vim
 wincent/Command-T
 msanders/snipmate.vim
-endel/vim-github-colorscheme
+endel/vim-github-colorschem
