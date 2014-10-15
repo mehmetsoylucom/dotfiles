@@ -1,6 +1,9 @@
 VIM
 ========
 
+VIM is effective terminal based editor. But it can be more efficient with bundles. 
+
+```bash
 apt-get install vim
 
 git clone https://github.com/mssoylu/vim /etc/vim
@@ -8,6 +11,7 @@ git clone https://github.com/mssoylu/vim /etc/vim
 vim
 
 :BundleInstall
+```
 
 Bundles List
 ========
