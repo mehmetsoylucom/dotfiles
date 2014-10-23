@@ -1,10 +1,18 @@
+" phatogen ile github clonelar bundle içinde otomatik çalışıyor
 execute pathogen#infect()
 syntax on
 filetype plugin indent on
  
-syntax enable
+" Genel renkler solarized theme
 set background=dark
 let g:solarized_termcolors=256
 colorscheme solarized
 
-map <F4> :NERDTreeToggle<CR> 
+" yan dosya ağacı f4 ile açılabiliyor
+map <F4> :NERDTreeToggle<CR>
+
+" dosyalar üzerinde sınırsız undo kapatılsa bile alabiliyor.
+" f5 ile dosya ağacı görülebiliyor.
+nnoremap <F5> :GundoToggle<CR>
+set undofile
+
