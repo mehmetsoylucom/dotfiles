@@ -17,5 +17,11 @@ vim
 
 Bundles List
 ========
+- Phatogen
+- Nerdtree 
+- ctrlp
+- gundo
+- nerdtree
+- supertab
+- easymotion
 
-- nerdtree 
