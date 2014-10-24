@@ -17,6 +17,8 @@ alias vgpro="cd ~/vagrant && sudo vagrant provision"
 alias vgssh="cd ~/vagrant && sudo vagrant ssh"
 alias homestead="cd ~/vagrant && sudo vim Homestead.yaml"
 alias vgpro="cd ~/vagrant && sudo vagrant provision"
+
+
 alias add="git add --all"
 alias commit="git commit -m "
 alias push="git push"
