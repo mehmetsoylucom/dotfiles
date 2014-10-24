@@ -12,8 +12,8 @@ alias s='sudo su'
 alias add="git add --all"
 alias commit="git commit -m "
 alias push="git push"
-alias vgrel="cd ~/vagrant && vagrant reload"
-alias vgpro="cd ~/vagrant && vagrant provision"
-alias homestead="cd ~/vagrant && vim Homestead.yaml"
-alias hosts="vim /etc/hosts"
+alias vgrel="cd ~/vagrant && sudo vagrant reload"
+alias vgpro="cd ~/vagrant && sudo vagrant provision"
+alias homestead="cd ~/vagrant && sudo vim homestead"
+alias vgpro="cd ~/vagrant && sudo vagrant provision"
 
