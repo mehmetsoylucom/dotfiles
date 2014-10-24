@@ -14,6 +14,6 @@ alias commit="git commit -m "
 alias push="git push"
 alias vgrel="cd ~/vagrant && sudo vagrant reload"
 alias vgpro="cd ~/vagrant && sudo vagrant provision"
-alias homestead="cd ~/vagrant && sudo vim homestead"
+alias homestead="cd ~/vagrant && sudo vim Homestead.yaml"
 alias vgpro="cd ~/vagrant && sudo vagrant provision"
 
