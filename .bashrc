@@ -149,3 +149,4 @@ alias add="git add --all"
 alias commit="git commit -m "
 alias push="git push"
 
+alias abis='vgssh && cd ~/Code/abis/root' 
