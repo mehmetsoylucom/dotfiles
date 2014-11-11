@@ -148,5 +148,8 @@ alias vgpro="cd ~/vagrant && sudo vagrant provision"
 alias add="git add --all"
 alias commit="git commit -m "
 alias push="git push"
+alias git lg="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 
-alias abis='vgssh && cd ~/Code/abis/root' 
+
+
+alias abis='vgssh && cd ~/Code/abis/root'i 
