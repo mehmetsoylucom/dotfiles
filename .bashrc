@@ -132,24 +132,15 @@ fi
 
 export TERM=screen-256color
 
-alias pu='phpunit'
+# terminal
 alias c='clear'
 alias s='sudo su'
-alias add="git add --all"
-alias commit="git commit -m "
-alias push="git push"
-alias vgrel="cd ~/vagrant && sudo vagrant reload"
-alias vgpro="cd ~/vagrant && sudo vagrant provision"
-alias vgssh="cd ~/vagrant && sudo vagrant ssh"
-alias homestead="cd ~/vagrant && sudo vim Homestead.yaml"
-alias vgpro="cd ~/vagrant && sudo vagrant provision"
 
+# git
+alias gg='sudo git gui'
 
-alias add="git add --all"
-alias commit="git commit -m "
-alias push="git push"
-alias git lg="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+# PHP
+alias pu='phpunit'
 
-
-
-alias abis='vgssh && cd ~/Code/abis/root'i 
+# Symfony
+alias cc='sudo ./app/console cache:clear'
