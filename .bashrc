@@ -135,6 +135,7 @@ export TERM=screen-256color
 # terminal
 alias c='clear'
 alias s='sudo su'
+alias sar = 'sudo service apache2 restart'
 
 # git
 alias gg='sudo git gui'
