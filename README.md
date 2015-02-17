@@ -7,7 +7,7 @@ Tmux is  terminal multiplaxer. You can split screen with tmux and use multi cons
 ```bash
 sudo apt-get install vim git tmux
 
-sudo git clone https://github.com/mssoylu/vim ~
+sudo git clone https://github.com/mehmetsoylucom/vim-tmux ~
 
 sudo cp Inconsolata-dz.otf /usr/share/fonts/truetype/Inconsolata-dz.otf
 
