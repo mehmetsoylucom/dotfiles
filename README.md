@@ -18,9 +18,8 @@ vim
 Bundles List
 ========
 - Phatogen
-- Nerdtree 
-- ctrlp 
-- nerdtree
-- supertab
-- easymotion
+- Nerdtree https://github.com/scrooloose/nerdtree
+- ctrlp https://github.com/kien/ctrlp.vim
+- supertab https://github.com/ervandew/supertab
+- easymotion https://github.com/Lokaltog/vim-easymotion
 
