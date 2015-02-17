@@ -14,8 +14,3 @@ set ls=2
 " yan dosya ağacı f4 ile açılabiliyor
 map <F4> :NERDTreeToggle<CR>
 
-" dosyalar üzerinde sınırsız undo kapatılsa bile alabiliyor.
-" f5 ile dosya ağacı görülebiliyor.
-nnoremap <F5> :GundoToggle<CR>
-set undofile
-
