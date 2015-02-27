@@ -145,3 +145,8 @@ alias pu='phpunit'
 
 # Symfony
 alias cc='sudo ./app/console cache:clear'
+alias ccc='sudo ./app/console cache:clear && chmod -R 777 *'
+# symfony shell autocomplater https://github.com/mehmetsoylucom/symfony2-autocomplete
+if [ -e ~/symfony2-autocomplete.bash ]; then
+    . ~/symfony2-autocomplete.bash
+fi
