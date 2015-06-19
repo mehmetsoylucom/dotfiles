@@ -139,7 +139,9 @@ alias sar='sudo service apache2 restart'
 
 # git
 alias gg='sudo git gui'
-
+alias gpom='git pull origin master'
+alias gb='git branch'
+alias gr='git fetch --all && git reset --hard && git clean -f'
 # PHP
 alias pu='phpunit'
 alias phpstorm='cd /home/meso/Programs/phpstorm/bin && ./phpstorm.sh'
