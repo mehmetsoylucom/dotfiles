@@ -133,6 +133,7 @@ fi
 export TERM=screen-256color
 
 # terminal
+alias vw='cd /var/www'
 alias c='clear'
 alias s='sudo su'
 alias sar='sudo service apache2 restart'
