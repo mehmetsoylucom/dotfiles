@@ -137,6 +137,7 @@ alias vw='cd /var/www'
 alias c='clear'
 alias s='sudo su'
 alias sar='sudo service apache2 restart'
+alias 777='chmod -R 777 *'
 
 # git
 alias gg='sudo git gui'
