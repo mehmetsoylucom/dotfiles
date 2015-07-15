@@ -150,6 +150,7 @@ alias phpstorm='cd /home/meso/Programs/phpstorm/bin && ./phpstorm.sh'
 # Symfony
 alias cc='sudo ./app/console cache:clear'
 alias ccc='sudo ./app/console cache:clear && echo "Symfony cache removed" && redis-cli flushall && echo "Redis cache removed" && chmod -R 777 * && echo "Chmod configured" && app/console doctrine:cache:clear-metadata && echo "Doctrine meta cache removed" && git config --global core.filemode false && echo "Git filemode false now" && echo "Scheme updated"' 
+alias cccp='sudo ./app/console cache:clear --env=prod && echo "Symfony cache removed" && redis-cli flushall && echo "Redis cache removed" && chmod -R 777 * && echo "Chmod configured" && app/console doctrine:cache:clear-metadata && echo "Doctrine meta cache removed" && git config --global core.filemode false && echo "Git filemode false now" && echo "Scheme updated"' 
 # symfony shell autocomplater https://github.com/mehmetsoylucom/symfony2-autocomplete
 if [ -e ~/symfony2-autocomplete.bash ]; then
     . ~/symfony2-autocomplete.bash
