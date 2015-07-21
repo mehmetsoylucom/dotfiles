@@ -138,15 +138,18 @@ alias c='clear'
 alias s='sudo su'
 alias sar='sudo service apache2 restart'
 alias 777='chmod -R 777 *'
+alias ..='cd ..'
 
 # git
 alias gg='sudo git gui'
 alias gpom='git pull origin master'
 alias gb='git branch'
 alias gr='git fetch --all && git reset --hard && git clean -f'
+
 # PHP
 alias pu='phpunit'
 alias phpstorm='cd /home/meso/Programs/phpstorm/bin && ./phpstorm.sh'
+
 # Symfony
 alias cc='sudo ./app/console cache:clear'
 alias ccc='sudo ./app/console cache:clear && echo "Symfony cache removed" && redis-cli flushall && echo "Redis cache removed" && chmod -R 777 * && echo "Chmod configured" && app/console doctrine:cache:clear-metadata && echo "Doctrine meta cache removed" && git config --global core.filemode false && echo "Git filemode false now" && echo "Scheme updated"' 
