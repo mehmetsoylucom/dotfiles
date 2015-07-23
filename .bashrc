@@ -139,6 +139,8 @@ alias s='sudo su'
 alias sar='sudo service apache2 restart'
 alias 777='chmod -R 777 *'
 alias ..='cd ..'
+alias agi='apt-get install'
+alias agr='apt-get remove'
 
 # git
 alias gg='sudo git gui'
