@@ -144,6 +144,7 @@ alias agr='apt-get remove'
 
 # git
 alias gg='sudo git gui'
+alias gcm='git checkout master'
 alias gpom='git pull origin master'
 alias gb='git branch'
 alias gr='git fetch --all && git reset --hard && git clean -f'
