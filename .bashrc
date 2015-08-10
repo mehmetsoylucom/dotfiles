@@ -133,6 +133,7 @@ fi
 export TERM=screen-256color
 
 # terminal
+alias short='PS1="[\W]\\$ "'
 alias vw='cd /var/www'
 alias c='clear'
 alias s='sudo su'
