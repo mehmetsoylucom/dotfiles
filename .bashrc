@@ -115,15 +115,6 @@ if ! shopt -oq posix; then
   fi                                                                                                                                                                                           
 fi                    
 
- 
-
-
-
-
-
-
-
-
 alias tmux="tmux -2"
 
 if command -v tmux>/dev/null; then
@@ -133,13 +124,13 @@ fi
 export TERM=screen-256color
 
 if [ -f ~/.bashrc-lib/.git-aliases ]; then
-       	source ~/.bashrc-lib/.git-aliases
+  source ~/.bashrc-lib/.git-aliases
 fi
 
 if [ -f ~/.bashrc-lib/.php-aliases ]; then
-       	source ~/.bashrc-lib/.php-aliases
+  source ~/.bashrc-lib/.php-aliases
 fi
 
 if [ -f ~/.bashrc-lib/.terminal-aliases ]; then
-       	source ~/.bashrc-lib/.terminal-aliases
+  source ~/.bashrc-lib/.terminal-aliases
 fi
