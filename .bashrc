@@ -132,33 +132,14 @@ fi
 
 export TERM=screen-256color
 
-# terminal
-alias short='PS1="[\W]\\$ "'
-alias vw='cd /var/www'
-alias c='clear'
-alias s='sudo su'
-alias sar='sudo service apache2 restart'
-alias 777='chmod -R 777 *'
-alias ..='cd ..'
-alias agi='apt-get install'
-alias agr='apt-get remove'
+if [ -f ~/.bashrc-lib/.git-aliases ]; then
+       	source ~/.bashrc-lib/.git-aliases
+fi
 
-# git
-alias gg='sudo git gui'
-alias gcm='git checkout master'
-alias gpom='git pull origin master'
-alias gb='git branch'
-alias gr='git fetch --all && git reset --hard && git clean -f'
+if [ -f ~/.bashrc-lib/.php-aliases ]; then
+       	source ~/.bashrc-lib/.php-aliases
+fi
 
-# PHP
-alias pu='phpunit'
-alias phpstorm='cd /home/meso/Programs/phpstorm/bin && ./phpstorm.sh'
-
-# Symfony
-alias cc='sudo ./app/console cache:clear'
-alias ccc='sudo ./app/console cache:clear && echo "Symfony cache removed" && redis-cli flushall && echo "Redis cache removed" && chmod -R 777 * && echo "Chmod configured" && app/console doctrine:cache:clear-metadata && echo "Doctrine meta cache removed" && git config --global core.filemode false && echo "Git filemode false now" && echo "Scheme updated"' 
-alias cccp='sudo ./app/console cache:clear --env=prod && echo "Symfony cache removed" && redis-cli flushall && echo "Redis cache removed" && chmod -R 777 * && echo "Chmod configured" && app/console doctrine:cache:clear-metadata && echo "Doctrine meta cache removed" && git config --global core.filemode false && echo "Git filemode false now" && echo "Scheme updated"' 
-# symfony shell autocomplater https://github.com/mehmetsoylucom/symfony2-autocomplete
-if [ -e ~/symfony2-autocomplete.bash ]; then
-    . ~/symfony2-autocomplete.bash
+if [ -f ~/.bashrc-lib/.terminal-aliases ]; then
+       	source ~/.bashrc-lib/.terminal-aliases
 fi
