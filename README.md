@@ -15,7 +15,7 @@ vim
 
 ```
 
-Bundles List
+Vim Bundles
 ========
 - Phatogen
 - Nerdtree https://github.com/scrooloose/nerdtree
