@@ -2,5 +2,5 @@
 
 Setup the GIT and use this command for Debian based systems.
 
-```php
+```bash
   bash bundles.bash 
