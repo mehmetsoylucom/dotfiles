@@ -40,8 +40,4 @@ mkdir -p ~/.vim/autoload ~/.vim/bundle;
 curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
 
 cp -rf .vimrc ~/
-cp -rf .vim ~/ 
-
-sudo rm -R ~/.vim/bundle
-mkdir ~/.vim/bundle
-cp -R .vim/bundle ~/.vim/bundle
+cp -Rrf .vim ~
