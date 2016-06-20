@@ -8,7 +8,23 @@
 
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
-# need for rbenv
+# add font
+
+sudo cp -rf ../Inconsolata-dz.otf /usr/share/fonts/truetype/Inconsolata-dz.otf
+
+# add config dotfiles for tmux and git
+
+cp -fr .gitconfig ~
+cp -fr .tmux.conf  ~
+cp -fr .bashrc ~
+cp -fr .gitignore ~
+
+# VIM 
+cp -rf .vimrc ~
+cp -Rrf .vim ~
+
+# Rbenv
+
 sudo apt-get update 
 sudo apt-get install git-core curl zlib1g-dev build-essential libssl-dev libreadline-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev libcurl4-openssl-dev python-software-properties libffi-dev
 
@@ -23,21 +39,3 @@ source ~/.zshrc
 
 
 
-# add font
-
-sudo cp -rf ../Inconsolata-dz.otf /usr/share/fonts/truetype/Inconsolata-dz.otf
-
-# add config dotfiles for tmux and git
-
-cp -fr .gitconfig ~
-cp -fr .tmux.conf  ~
-cp -fr .bashrc ~
-cp -fr .gitignore ~
-
-# VIM plugins
-
-mkdir -p ~/.vim/autoload ~/.vim/bundle;
-curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
-
-cp -rf .vimrc ~/
-cp -Rrf .vim ~
