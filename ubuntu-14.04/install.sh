@@ -17,14 +17,19 @@ cp -fr .tmux.conf  ~
 cp -fr .bashrc ~
 cp -fr .gitignore ~
 
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
 # VIM plugins
 
-exec sudo cp -rf .vimrc ~/
-exec sudo cp -Rrf .vim ~/
-exec sudo cd ~/.vim/bundle
-exec sudo rm -R ~/.vim/bundle/ctrlp.vim && sudo git clone https://github.com/kien/ctrlp.vim
-exec sudo rm -R ~/.vim/bundle/nerdtree && sudo git clone https://github.com/scrooloose/nerdtree
-exec sudo rm -R ~/.vim/bundle/supertab && sudo git clone https://github.com/ervandew/supertab
-exec sudo rm -R ~/.vim/bundle/vim-easymotion && sudo git clone https://github.com/Lokaltog/vim-easymotion
-exec sudo rm -R ~/.vim/bundle/vim-rspec && sudo git clone https://github.com/thoughtbot/vim-rspec
+mkdir -p ~/.vim/autoload ~/.vim/bundle;
+curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
+
+cp -rf .vimrc ~/
+cp -rf .vim ~/
+cd ~/.vim/bundle
+rm -R ~/.vim/bundle/ctrlp.vim && git clone https://github.com/kien/ctrlp.vim ~/.vim/bundle/ctrlp.vim
+rm -R ~/.vim/bundle/nerdtree && git clone https://github.com/scrooloose/nerdtree ~/.vim/bundle/nerdtree
+rm -R ~/.vim/bundle/supertab && git clone https://github.com/ervandew/supertab ~/.vim/bundle/supertab
+rm -R ~/.vim/bundle/vim-easymotion && git clone https://github.com/Lokaltog/vim-easymotion ~/.vim/bundle/vim-easymotion
+rm -R ~/.vim/bundle/vim-rspec && git clone https://github.com/thoughtbot/vim-rspec ~/.vim/bundle/vim-rspec 
 
