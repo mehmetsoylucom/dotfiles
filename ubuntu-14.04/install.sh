@@ -44,9 +44,4 @@ cp -rf .vim ~/
 
 sudo rm -R ~/.vim/bundle
 mkdir ~/.vim/bundle
-git clone https://github.com/kien/ctrlp.vim ~/.vim/bundle/ctrlp.vim
-git clone https://github.com/scrooloose/nerdtree ~/.vim/bundle/nerdtree
-git clone https://github.com/ervandew/supertab ~/.vim/bundle/supertab
-git clone https://github.com/Lokaltog/vim-easymotion ~/.vim/bundle/vim-easymotion
-git clone https://github.com/thoughtbot/vim-rspec ~/.vim/bundle/vim-rspec 
-
+cp -R .vim/bundle ~/.vim/bundle
