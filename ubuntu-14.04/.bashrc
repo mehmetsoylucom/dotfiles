@@ -1,7 +1,8 @@
 #
-# Dotfiles
-# os : ubuntu-14.04
-# author : Mehmet Soylu
+# Project	: Dotfiles
+# Author 	: Mehmet Soylu
+# OS 		: ubuntu-14.04
+# Github 	: mehmetsoylucom/dotfiles
 #
 
 # first rows activate tmux & zsh
