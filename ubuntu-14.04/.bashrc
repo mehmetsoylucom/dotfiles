@@ -1,3 +1,16 @@
+#
+# Dotfiles
+# os : ubuntu-14.04
+# author : Mehmet Soylu
+#
+
+# first rows activate tmux & zsh
+
+[[ $TERM != "screen" ]] && exec tmux
+exec zsh
+
+#################################################
+
 # ~/.bashrc: executed by bash(1) for non-login shells.                                                                                                                                         
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)                                                                                                                     
 # for examples                                                                                                                                                                                 
