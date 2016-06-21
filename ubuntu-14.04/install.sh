@@ -19,6 +19,7 @@ cp -fr .tmux.conf  ~
 cp -fr .bashrc ~
 cp -fr .gitignore ~
 cp -fr .zshrc ~
+cp -fr .profile ~
 
 # VIM 
 cp -rf .vimrc ~
@@ -36,3 +37,4 @@ git clone git://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-buil
 source ~/.zshrc
 source ~/.bashrc
 source ~/.vimrc
+source ~/.profile
