@@ -18,6 +18,7 @@ cp -fr .gitconfig ~
 cp -fr .tmux.conf  ~
 cp -fr .bashrc ~
 cp -fr .gitignore ~
+cp -fr .zshrc ~
 
 # VIM 
 cp -rf .vimrc ~
@@ -31,11 +32,7 @@ sudo apt-get install git-core curl zlib1g-dev build-essential libssl-dev libread
 
 cd
 git clone git://github.com/sstephenson/rbenv.git .rbenv
-echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.zshrc
-echo 'eval "$(rbenv init -)"' >> ~/.zshrc
-
 git clone git://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
-echo 'export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"' >> ~/.zshrc
 source ~/.zshrc
 source ~/.bashrc
 source ~/.vimrc
