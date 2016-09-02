@@ -20,6 +20,7 @@ sudo apt-get install -y libapache2-mod-passenger
 sudo apt-get install -y git tig ssh 
 sudo apt-get install -y ruby2.3 ruby2.3-dev 
 sudo apt-get install -y python3 python-pip 
+sudo apt-get install -y nodejs npm 
 sudo apt-get install -y mysql-server redis-server sqlite3
 
 # nokogiri packs for rails
@@ -34,3 +35,5 @@ gem install bundler
 gem install sinatra
 gem install rails
 
+# NPM
+npm install -y bower 
