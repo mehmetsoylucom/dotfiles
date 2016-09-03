@@ -1,6 +1,6 @@
 # Base install for ubuntu 14.04
 apt-get update
-sudo apt-get install -y apt-transport-https ca-certificates
+sudo apt-get install -y --force-yes apt-transport-https ca-certificates
 
 echo 'deb https://oss-binaries.phusionpassenger.com/apt/passenger trusty main' > /etc/apt/sources.list.d/passenger.list
 echo 'deb http://ppa.launchpad.net/brightbox/ruby-ng/ubuntu trusty main' > /etc/apt/sources.list.d/ruby.list
